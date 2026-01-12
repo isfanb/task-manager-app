@@ -43,10 +43,10 @@ Follow these steps to get the project running on your local machine:
    cd task-manager
    ```
 3. **Install Dependencies**
-  ```bash
-  npm install
-  ```
+   ```bash
+   npm install
+   ```
 4. **Run the application**
-  ```bash
-  ng serve --open
-  ```
+   ```bash
+   ng serve --open
+   ```
