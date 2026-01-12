@@ -2,6 +2,8 @@
 
 Task Management application that focuses on organized workflows and data. This app allows users to create, track, and filter tasks while ensuring safety through validation and confirmation dialogs.
 
+<img width="1899" height="957" alt="image" src="https://github.com/user-attachments/assets/45be0b91-2975-47d3-8405-1b46f8a76c74" />
+
 ---
 
 ## ✨ Features
