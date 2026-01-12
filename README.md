@@ -36,7 +36,7 @@ Follow these steps to get the project running on your local machine:
 
 1. **Clone the repository**
    ```bash
-   git clone [https://github.com/your-username/task-manager-app.git](https://github.com/your-username/task-manager-app.git)
+   git clone https://github.com/your-username/task-manager-app.git
    ```
 2. **Navigate to the project directory**
    ```bash
