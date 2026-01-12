@@ -1,0 +1,17 @@
+<mat-card class="card-item" appearance="outlined">
+  <mat-card-title>{{ task().title }}</mat-card-title>
+  <mat-card-subtitle class="card-subtitle">{{ task().description }}</mat-card-subtitle>
+  <div class="card-item-action">
+    <mat-form-field>
+      <mat-label>Open</mat-label>
+      <mat-select (selectionChange)="onCategoryChange($event.value)" [value]="task().completed === true ? 'Done' : 'On Progress'">
+        @for (item of taskStore.listCategoryService(); track $index) {
+          <mat-option [value]="item.name">{{item.name}}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+    <button matMiniFab matTooltip="Delete" matTooltipPosition="above" (click)="openDialog(task().id)">
+      <mat-icon class="card-item-action-delete">delete</mat-icon>
+    </button>
+  </div>
+</mat-card>

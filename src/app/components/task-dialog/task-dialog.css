@@ -1,0 +1,23 @@
+.form-field {
+  width: 100%;
+}
+
+.form-content {
+  padding: .50rem 0;
+}
+
+.form-action {
+  padding-top: 0;
+  padding-right: 0;
+}
+
+.error-list {
+  color: #ba1a1a;
+  font-size: 0.875rem;
+  margin: 0.25rem 0 0 0;
+  padding-left: 0;
+  list-style-position: inside;
+}
+.error-list li {
+  margin: 0;
+}

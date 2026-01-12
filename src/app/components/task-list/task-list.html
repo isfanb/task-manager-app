@@ -1,0 +1,24 @@
+<section>
+    <mat-card class="card-container" appearance="outlined">
+      <div class="card-header">
+        <h2>Get Things Done.</h2>
+        <button class="card-button" matButton="tonal" (click)="openDialog()"><mat-icon>add</mat-icon>Create Task</button>
+      </div>
+      <mat-divider></mat-divider>
+      <div class="filter-form-field">
+        <mat-label class="filter-title">Filter: </mat-label>
+        <mat-form-field>
+          <mat-label>Open</mat-label>
+          <mat-select (selectionChange)="taskStore.filter.set($event.value)">
+            <mat-option [value]="'All'">All</mat-option>
+            @for (task of taskStore.listCategoryService(); track $index) {
+              <mat-option [value]="task.name">{{task.name}}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <cdk-virtual-scroll-viewport itemSize="50" class="example-viewport">
+          <app-task-item *cdkVirtualFor="let item of taskStore.filteredTasks()" (remove)="deleteItem(item.id)" [task]="item"></app-task-item>
+      </cdk-virtual-scroll-viewport>
+    </mat-card>
+</section>

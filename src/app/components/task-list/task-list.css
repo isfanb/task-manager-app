@@ -1,0 +1,37 @@
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card-container {
+  width: 50%;
+  min-height: 80vh;
+  padding: 1rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-button {
+  margin: 1rem 0;
+}
+
+.example-viewport {
+  width: 100%;
+  min-height: 80vh;
+}
+
+.filter-form-field {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: .50rem;
+}
+
+.filter-title {
+  margin: 1rem;
+}
+

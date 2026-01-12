@@ -1,0 +1,18 @@
+<mat-dialog-content>
+  <h3 mat-dialog-title>New Task</h3>
+</mat-dialog-content>
+<mat-dialog-content>
+  <mat-form-field class="form-field" appearance="outline">
+    <mat-label>Input Task</mat-label>
+    <input matInput [field]="taskModelForm.name">
+  </mat-form-field>
+<mat-dialog-content class="form-content">
+  <mat-form-field class="form-field" appearance="outline">
+    <mat-label>Input Description</mat-label>
+    <textarea matInput [field]="taskModelForm.desc"></textarea>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions class="form-action">
+  <button matButton (click)="closeDialog()">Cancel</button>
+  <button matButton [disabled]="taskModelForm().invalid()" (click)="saveDialog()">Save</button>
+</mat-dialog-actions>

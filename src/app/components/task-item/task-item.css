@@ -1,0 +1,20 @@
+
+.card-item {
+  min-height: 20vh;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: white;
+}
+
+.card-item-action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item-action-delete {
+  color: red;
+}
+
+.card-subtitle {
+  margin: 1.2rem 0;
+}
